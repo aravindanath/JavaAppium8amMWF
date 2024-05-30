@@ -19,16 +19,16 @@ public class AppLaunch {
    protected AppiumDriver driver;
 
     @BeforeClass
-    public void setup() throws MalformedURLException {
+    public void setup() throws  MalformedURLException {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
 //        caps.setCapability("platformName", "Android");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME,"Mytest");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME,"OnePlus 7T");
         caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"com.androidsample.generalstore.SplashActivity");
         caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"com.androidsample.generalstore");
-        caps.setCapability(MobileCapabilityType.UDID,"emulator-5554");
+        caps.setCapability(MobileCapabilityType.UDID,"59ff3a5f");
          driver = new AppiumDriver (new URL("http://127.0.0.1:4723/"),caps);
          driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     
