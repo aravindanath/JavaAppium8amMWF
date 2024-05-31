@@ -16,6 +16,8 @@ public class TC_02 extends  AppLaunch{
         driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Test Name");
         driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 
+        //
+        ////android.widget.Toast[@text="Please enter your name"]
     }
 
 }
