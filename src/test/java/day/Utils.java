@@ -44,4 +44,18 @@ public class Utils {
         return fake.number().digits(11);
 
     }
+
+    public static String getOtp(String otpmsg){
+        String otp = null;
+        for(String str  : otpmsg.split(" ")){
+            if(str.matches("\\d{6}")){
+                System.out.println(str);
+                otp = str;
+            }else if(str.matches("\\d{4}")){
+                System.out.println(str);
+                otp = str;
+            }
+        }
+        return otp;
+    }
 }

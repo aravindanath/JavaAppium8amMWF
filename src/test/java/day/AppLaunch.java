@@ -31,7 +31,7 @@ public class AppLaunch {
         caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"com.androidsample.generalstore");
 //        caps.setCapability(MobileCapabilityType.UDID,"59ff3a5f");
          driver = new AndroidDriver (new URL("http://127.0.0.1:4723/"),caps);
-         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
     
 
 
